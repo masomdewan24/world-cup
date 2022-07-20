@@ -155,7 +155,7 @@ main {
 .view-btn {
     text-align: center;
     margin-bottom: 50px;
-    display: none;
+    visibility: hidden;
 }
 
 .view-btn button {
@@ -322,3 +322,102 @@ footer {
         margin: 0px;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .banner {
+        width: 734px;
+        height: 398px;
+    }
+
+    .banner-text {
+        width: 258px;
+        margin: 0;
+        padding-right: 0px;
+    }
+
+    .banner-text button {
+        margin-top: 21px;
+    }
+
+    .banner-text h1 {
+        font-size: 22px;
+    }
+
+    .banner-text p {
+        margin-bottom: 0px;
+    }
+
+    .banner-text p span {
+        display: none;
+    }
+
+    .banner-image img {
+        width: 233px;
+        height: 245px;
+        margin: 0;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .blog {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+    }
+
+    .blog-menu {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    header {
+        margin: 0px;
+    }
+
+
+    .footer-menu {
+        display: flex;
+        flex-direction: colrumn;
+
+    }
+
+    .view-btn {
+
+        visibility: visible;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .footer-menu a {
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+
+    .social-icone {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .social-icone span {
+        margin: 0px;
+    }
+
+    .social-icone a {
+        margin: 0px;
+    }
+
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
