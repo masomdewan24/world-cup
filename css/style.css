@@ -236,28 +236,23 @@ footer {
     color: blue
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
     .banner {
-        display: flex;
-        justify-content: center;
         flex-direction: column;
         align-items: center;
         width: 334px;
         height: 472px;
-        background-color: rgb(206, 46, 46);
-
         border-radius: 30px;
     }
 
     .banner-text {
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         width: 258px;
-        height: 178px;
-        margin: 28px 38px 28px 38px;
-        padding-right: 50px;
+        margin: 0;
+        padding-right: 0px;
+    }
+
+    .banner-text button {
+        margin-top: 21px;
     }
 
     .banner-text h1 {
@@ -265,9 +260,6 @@ footer {
     }
 
     .banner-text p {
-        font-weight: 400;
-        font-size: 16px;
-
         margin-bottom: 0px;
     }
 
@@ -275,20 +267,58 @@ footer {
         display: none;
     }
 
-
-
     .banner-image img {
         width: 233px;
         height: 245px;
-        margin-top: 0px;
-        margin-left: 65px;
+        margin: 0;
     }
 
     main {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .blog {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+    }
+
+    .blog-menu {
+        background-color: white;
+    }
+
+    header {
+        margin: 0px;
+    }
+
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    hr {
         display: none;
     }
 
-    footer {
-        display: none;
+    .footer-menu a {
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+
+    .social-icone {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .social-icone span {
+        margin: 0px;
+    }
+
+    .social-icone a {
+        margin: 0px;
     }
 }
