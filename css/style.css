@@ -56,7 +56,13 @@ header {
     font-family: 'HelveticaNeue';
     font-weight: 400;
     font-size: 20px;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
 
+}
+.banner-text button:hover {
+    background-color:rgb(252, 173, 159);
+   
+    transform: rotate(45deg);
 }
 
 .banner-image img {
@@ -64,7 +70,7 @@ header {
     height: 613px;
     margin-top: 33px;
     margin-right: 79px;
-}
+   }
 
 main {
 
@@ -105,7 +111,7 @@ main {
 
 .blog-menu button a {
     text-decoration: none;
-    padding: 252px 64px;
+    padding: 50px 25px;
     color: black;
 }
 
@@ -123,6 +129,7 @@ main {
 .blog-img img {
     width: 312px;
     height: 175px;
+    border-radius: 10px;
 }
 
 .blog-btn button {
@@ -341,22 +348,25 @@ footer {
     }
 
     .banner-text h1 {
-        font-size: 22px;
+        font-size: 40px;
     }
 
     .banner-text p {
         margin-bottom: 0px;
     }
-
     .banner-text p span {
         display: none;
     }
 
+
     .banner-image img {
-        width: 233px;
-        height: 245px;
-        margin: 0;
+        width: 323px;
+        height: 340px;
+        margin-right: 0px;
+        margin-top:58px
     }
+        
+    
 
     main {
         flex-direction: column;
@@ -374,6 +384,12 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: flex-start;
+        height: 130px;
+    }
+    .blog-menu button{
+        width:350px;
+        margin-right: 50px;
     }
 
     header {
@@ -382,9 +398,8 @@ footer {
 
 
     .footer-menu {
-        display: flex;
-        flex-direction: colrumn;
-
+        
+margin-bottom: 50px;
     }
 
     .view-btn {
@@ -398,13 +413,11 @@ footer {
 
     .footer-menu a {
         margin-top: 40px;
-        margin-left: 0px;
+        margin-left: 15px;
     }
 
     .social-icone {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
+       
     }
 
     .social-icone span {
